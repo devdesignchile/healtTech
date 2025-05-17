@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+  <section class="hero-primary d-flex justify-content-center mb-5 col-12">
+    <div class=" align-center col-10 pt-5">
+      <div class="row justify-content-center align-items-center min-vh-70 text-center text-lg-start">
+        <div class="col-lg-6 py-5 d-none d-lg-block">
+          <img src="{% static 'images/3.png' %}" alt="Imagen médico" class="img-fluid w-75">
+        </div>
+        <div class="col-12 hero-text col-lg-6">
+          <h1 class="fw-bold display-4 mb-4 text-light"><strong>BRANDING MÉDICO</strong></h1>
+          <p class="text-uppercase text-light mb-5"> <strong>Diferencia tu consulta con una imagen coherente, moderna y confiable y haz que tus clientes te reconozcan</strong></p>
+          <a href="#planes" class="btn-cta-primary btn-lg mt-5">Ver Planes</a>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center g-5 text-center text-lg-start">
+      <div class="col-lg-6">
+        <img src="{% static 'images/branding-kit.png' %}" alt="Identidad Médica" class="img-fluid mx-auto d-block">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="section-title color-primary">¿Por qué es fundamental el Branding?</h2>
+        <p class="section-subtitle mt-3">Un sitio web profesional necesita una identidad visual sólida para generar confianza y diferenciarse en un entorno competitivo.</p>
+        <ul class="list-unstyled mt-4">
+          <li class="mb-2"><span class="color-secondary">✔</span> Transmite profesionalismo y credibilidad desde el primer segundo.</li>
+          <li class="mb-2"><span class="color-secondary">✔</span> Mejora la coherencia visual entre sitio web, redes sociales y papelería médica.</li>
+          <li class="mb-2"><span class="color-secondary">✔</span> Aumenta el reconocimiento de tu marca personal o clínica.</li>
+          <li class="mb-2"><span class="color-secondary">✔</span> Complementa el posicionamiento digital y facilita campañas de marketing.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="container text-center py-5">
+    <h2 class="display-5 fw-bold mb-3">Tu imagen no solo se ve… se siente</h2>
+    <p class="lead text-muted mb-5">
+      Una identidad visual profesional transforma la percepción de tu clínica.
+      Del logo genérico a una marca memorable y coherente.
+    </p>
+    <div class="row justify-content-center">
+      <div class="col-md-5 mb-4">
+        <h5 class="text-muted mb-3">ANTES</h5>
+        <img src="{% static 'images/antes.png' %}" alt="Antes del branding" class="img-fluid">
+        <p class="medium  mt-2">Sitio sin coherencia visual, logo genérico, sin identidad de marca.</p>
+      </div>
+      <div class="col-md-5 mb-4">
+        <h5 class="color-secondary mb-3">DESPUÉS</h5>
+        <img src="{% static 'images/despues.png' %}" alt="Después del branding" class="img-fluid">
+        <p class="medium  mt-2">Imagen moderna, profesional, coherente en web y redes sociales.</p>
+      </div>
+    </div>
+  </section>
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title"><strong>¿Te ha pasado esto?</strong></h2>
+    </div>
+    <div class="row align-items-center mb-5 text-center text-lg-start" data-aos-delay="300" data-aos-duration="1000" data-aos="fade-right">
+      <div class="col-lg-6">
+        <h2><strong>Tu logo no representa tu especialidad ni profesionalismo</strong></h2>
+      </div>
+      <div class="col-lg-6">
+        <img src="{% static 'images/x.png' %}" alt="IMG" class="img-fluid w-50 mx-auto d-block">
+      </div>
+    </div>
+    <div class="row align-items-center mb-5 flex-lg-row-reverse text-center text-lg-start" data-aos-delay="300" data-aos-duration="1000" data-aos="fade-left">
+      <div class="col-lg-6">
+        <h2><strong>Tienes colores y estilos diferentes en cada red social</strong></h2>
+      </div>
+      <div class="col-lg-6">
+        <img src="{% static 'images/x.png' %}" alt="IMG" class="img-fluid w-50 mx-auto d-block">
+      </div>
+    </div>
+    <div class="row align-items-center mb-5 text-center text-lg-start" data-aos-delay="300" data-aos-duration="1000" data-aos="fade-right">
+      <div class="col-lg-6">
+        <h2><strong>No sabes cómo presentarte visualmente a nuevos pacientes</strong></h2>
+      </div>
+      <div class="col-lg-6">
+        <img src="{% static 'images/x.png' %}" alt="IMG" class="img-fluid w-50 mx-auto d-block">
+      </div>
+    </div>
+    <div class="row align-items-center flex-lg-row-reverse text-center text-lg-start" data-aos-delay="300" data-aos-duration="1000" data-aos="fade-left">
+      <div class="col-lg-6">
+        <h2><strong>Un buen branding puede resolver todo esto con claridad y estilo</strong></h2>
+      </div>
+      <div class="col-lg-6">
+        <img src="{% static 'images/check.png' %}" alt="IMG" class="img-fluid mx-auto d-block w-50">
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="primary-bg pb-5" id="planes">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-light ">Planes de Branding</h2>
+        <p class="lead text-light">Mejora la identidad visual de tu consulta médica y destaca con un diseño coherente, profesional y atractivo</p>
+      </div>
+        <div class="row g-4 justify-content-center plan-group">
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 text-center shadow-lg border-0">
+              <div class="card-body px-4 d-flex flex-column">
+                <h5 class="fw-bold color-primary">Identidad básica</h5>
+                <p class="badge rounded-pill mb-3">Desde $79.990 CLP</p>
+                <p class="small text-muted mb-3">Ideal para médicos que comienzan su marca personal en línea</p>
+                <ul class="list-unstyled small mb-4 text-center">
+                  <li>✔ Logo profesional (3 propuesta)</li>
+                  <li>✔ Paleta de colores y tipografías sugeridas</li>
+                  <li>✔ Manual de uso básico (PDF)</li>
+                  <li>✔ Formato PNG y SVG</li>
+                </ul>
+                <div class="mt-auto">
+                  <a target="_blank" href="https://wa.me/56940024998?text=Hola%2C%20estoy%20interesado%20en%20el%20plan%20de%20Identidad%20b%C3%A1sica%20para%20crear%20mi%20marca%20personal%20m%C3%A9dica.%20%C2%BFPodemos%20hablar%20al%20respecto%3F" class="btn-plan">Cotizar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 text-center shadow-lg border-0">
+              <div class="card-body px-4 d-flex flex-column">
+                <h5 class="fw-bold color-primary">Kit visual profesional</h5>
+                <p class="badge rounded-pill mb-3">Desde $139.990 CLP</p>
+                <p class="small text-muted mb-3">Para quienes quieren presencia sólida y coherente en web y redes</p>
+                <ul class="list-unstyled small mb-4 text-center">
+                  <li>✔ 2 propuestas de logo + 2 revisiones</li>
+                  <li>✔ Manual de identidad visual extendido</li>
+                  <li>✔ Archivos listos para redes sociales</li>
+                  <li>✔ Estilo visual aplicado a tu web</li>
+                </ul>
+                <div class="mt-auto">
+                  <a target="_blank" href="https://wa.me/56940024998?text=Hola%2C%20quiero%20cotizar%20el%20Kit%20visual%20profesional%20para%20fortalecer%20mi%20marca%20en%20web%20y%20RRSS.%20%C2%BFMe%20puedes%20dar%20m%C3%A1s%20detalles%3F" class="btn-plan">Cotizar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 text-center shadow-lg border-0">
+              <div class="card-body px-4 d-flex flex-column">
+                <h5 class="fw-bold color-primary">Identidad clínica</h5>
+                <p class="badge rounded-pill mb-3">Desde $229.990 CLP</p>
+                <p class="small text-muted mb-3">Para clínicas que requieren una marca profesional, versátil y memorable</p>
+                <ul class="list-unstyled small mb-4 text-center">
+                  <li>✔ Proceso de branding con brief inicial</li>
+                  <li>✔ 3 propuestas de logo + revisiones ilimitadas</li>
+                  <li>✔ Manual completo + elementos gráficos</li>
+                  <li>✔ Aplicación visual en web, RRSS y papelería</li>
+                </ul>
+                <div class="mt-auto">
+                  <a target="_blank" href="https://wa.me/56940024998?text=Hola%2C%20estoy%20interesado%20en%20el%20servicio%20de%20Identidad%20cl%C3%ADnica%20para%20mi%20marca.%20%C2%BFMe%20puedes%20contar%20m%C3%A1s%20sobre%20el%20proceso%20de%20branding%3F" class="btn-plan">Cotizar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <section class="d-flex align-items-center bg-light" style="min-height: 50vh;">
+    <div class="container text-center">
+      <h2 class="display-5 fw-semibold color-primary mb-3">¿Listo para dar el siguiente paso?</h2>
+      <p class="lead text-dark mb-4">
+        Nuestra experiencia en branding médico te ayudará a destacar y conectar con más pacientes.<br>
+        Escríbenos y empieza a construir tu marca con propósito.
+      </p>" 
+    <a target="_blank" href="https://wa.me/56940024998?text=Hola,%20quiero%20potenciar%20mi%20consulta%20médica%20con%20su%20ayuda%20quiero%20agendar%20una%20reunión" class="btn btn-cta-alternative btn-lg px-5 py-3 shadow-sm">Agendar reunión</a>
+    </div>
+  </section>
+{% endblock %}

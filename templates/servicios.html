@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<section class="hero-secondary d-flex justify-content-center mb-5 col-12">
+  <div class="align-center col-10 pt-5 col-md-9 col-lg-10 mx-auto">
+    <div class="row justify-content-center align-items-center min-vh-70 text-center text-lg-start">
+      <div class="col-lg-6 py-5 d-none d-lg-block">
+        <img src="{% static 'images/2.png' %}" alt="Imagen médico" class="img-fluid w-75">
+      </div>
+        <div class="col-12 hero-text col-lg-6 d-flex flex-column justify-content-between">
+        <p class="text-uppercase text-light d-none d-md-block">
+          <strong >Para clínicas, consultas y especialistas</strong>
+        </p>
+        <h1 class="fw-bold display-5 text-light">CONOCE NUESTROS <strong>SERVICIOS</strong></h1>
+        <p class="text-light mb-5 d-none d-md-block">
+          Atrae más pacientes y destaca en tu especialidad
+        </p>
+        <div class="mt-5">
+            <a href="{% url 'planes' %}" class="btn-cta-secondary btn-lg">Ver Planes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container mb-5">
+  <div class="text-center mb-5">
+    <h2 class="fw-bold mb-5 section-title">
+      <strong class="color-primary">Servicios</strong>
+    </h2>
+    <p class="text-center lead text-muted mb-5">
+      Escoge que <strong class="color-primary">servicio </strong>necesitas para tu negocio
+    </p>
+  </div>
+  <div class="container-fluid d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 bg-white p-0">
+    <a href="{% url 'diseño_web' %}" class="nav-link-box text-dark text-center text-decoration-none w-75 w-md-auto">
+      <div class="icon mb-2">
+        <i class="bi bi-display color-primary fs-3"></i>
+      </div>
+      <div><h6>Diseño y Desarrollo Web</h6></div>
+    </a>
+    <a href="{% url 'seo' %}" class="nav-link-box text-dark text-center text-decoration-none w-75 w-md-auto">
+      <div class="icon mb-2">
+        <i class="bi bi-search color-primary fs-3"></i>
+      </div>
+      <div><h6>SEO Médico</h6></div>
+    </a>
+    <a href="{% url 'branding' %}" class="nav-link-box text-dark text-center text-decoration-none w-75 w-md-auto">
+      <div class="icon mb-2">
+        <i class="bi bi-brush color-primary fs-3"></i>
+      </div>
+      <div><h6>Branding Médico</h6></div>
+    </a>
+  </div>
+</section>
+<section class="description-section my-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start">
+        <h2 class="fw-bold mb-4">Impulsa tu presencia profesional en el mundo digital</h2>
+        <p class="lead text-muted mb-4">
+          En un mercado cada vez más competitivo, una imagen sólida y confiable marca la diferencia.
+          Nuestro equipo combina <strong class="color-primary">estrategia</strong>,<strong class="color-primary">diseño</strong> y <strong class="color-primary">tecnología</strong> para ayudarte a atraer más pacientes,
+          fortalecer tu reputación y consolidar tu práctica médica en el entorno digital.
+        </p>
+        <p class="text-muted">
+          Te acompañamos en cada etapa: desde la creación de tu sitio web, optimización SEO, publicidad estratégica,
+          hasta el posicionamiento de tu marca personal. Cada solución está diseñada específicamente para profesionales de la salud
+          que buscan crecer con excelencia.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="{% static 'images/doctores.png' %}" alt="Profesionales de la salud digitales" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title"><strong>Como Trabajar con Nosotros</strong></h2>
+    </div>
+    <div class="row align-items-center mb-5" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+      <div class="col-lg-6 text-center text-lg-start">
+        <h2><strong>Cotiza el servicio que necesites</strong></h2>
+        <p>Haz clic en "Cotizar" para hablar directamente con nuestro asistente por WhatsApp. Cada consulta es personalizada y <strong class="color-primary">no se realiza ningún cobro</strong> hasta tener en detalle tus requerimientos y necesidades para entregarte una propuesta y presupuesto adecuado</p>
+        <a href="{% url 'planes' %}" class="btn-section btn-80-mobile mt-3 mx-auto ">Cotizar</a>
+      </div>
+      <div class="col-lg-6 text-center mt-5">
+        <img src="{% static 'images/cotizar.png' %}" alt="Diseño Web Médico" class="img-fluid w-75 mx-auto">
+      </div>
+    </div>
+    <div class="row align-items-center mb-5 flex-lg-row-reverse" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
+      <div class="col-lg-6 text-center text-lg-start">
+        <h2><strong>Videollamada de<span class="color-primary"> Diagnóstico</span></strong></h2>
+        <p>En esta sesión analizamos tus necesidades, objetivos y expectativas. Solo después de conocerte te proponemos un plan personalizado. <strong class="color-primary">Sin compromiso ni pago anticipado.</strong></p>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="{% static 'images/Video files-bro.png' %}" alt="Videollamada Diagnóstico" class="img-fluid w-75 mx-auto">
+      </div>
+    </div>
+    <div class="row align-items-center mb-5" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+      <div class="col-lg-6 text-center text-lg-start">
+        <h2><strong>Entrega de<span class="color-primary"> Propuesta Personalizada</span></strong></h2>
+        <p>Te enviamos una propuesta clara que incluye diseño, funcionalidades, estrategia de posicionamiento y tiempos. Todo pensado para tu especialidad médica. Posterior al <strong class="text-success">"SI"</strong> de la propuesta, se envia el <strong class="text-dark">contrato</strong> y se firma por ambas partes</p>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="{% static 'images/propuesta.jpg' %}" alt="Propuesta Estratégica" class="img-fluid w-75 mx-auto">
+      </div>
+    </div>
+    <div class="row align-items-center mb-5 flex-lg-row-reverse" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
+      <div class="col-lg-6 text-center text-lg-start">
+        <h2><strong>Desarrollo de la propuesta</strong></h2>
+        <p>Diseñamos tu página web, trabajamos la identidad visual y dejamos todo preparado para lanzar tu presencia digital con impacto profesional.</p>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="{% static 'images/Software integration-bro.png' %}" alt="Branding Médico" class="img-fluid w-75 mx-auto">
+      </div>
+    </div>
+    <div class="row align-items-center mb-5" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+      <div class="col-lg-6 text-center text-lg-start">
+        <h2><strong>Lanzamiento y<span class="color-primary"> Capacitación</span></strong></h2>
+        <p>Publicamos tu sitio web y te capacitamos para que puedas administrarlo o responder consultas. También puedes optar por dejarlo en nuestras manos con un plan mensual.</p>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="{% static 'images/Launching-pana.png' %}" alt="Lanzamiento Web Médico" class="img-fluid w-75 mx-auto">
+      </div>
+    </div>
+    <div class="row align-items-center mb-5 flex-lg-row-reverse" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
+      <div class="col-lg-6 text-center text-lg-start">
+        <h2><strong>Soporte y<span class="color-primary"> Optimización Continua</span></strong></h2>
+        <p>Te acompañamos después del lanzamiento: mejoras continuas, posicionamiento en Google, rediseños si es necesario y análisis de resultados. Tienes 3 meses de garantias para poder mejorar, actualizar o modificar ciertas partes de tu pagina</p>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="{% static 'images/Call center-amico.png' %}" alt="Soporte Continuo" class="img-fluid w-75 mx-auto">
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="container recomedaciones mb-5 pb-5">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold mb-5 ">¿No sabes que es lo que necesitas?</h2>
+     <p class="text-center lead text-muted mb-5">Selecciona la opción que más se asemeje a tu situación y descubre cómo podemos ayudarte</p>
+    </div>
+    <div class="row text-center">
+      <div class="col-lg-4 mb-4 d-flex">
+        <div class="p-4 shadow rounded bg-white w-100 d-flex flex-column justify-content-between">
+          <div class="h-100 d-flex flex-column justify-content-between">
+            <div>
+              <i class="bi bi-award display-4" style="color:#2E8B57;"></i>
+              <h4 class="fw-bold mt-3" style="color:#003366;"> <strong>Estoy comenzando, quiero hacerlo bien</strong></h4>
+              <p class="text-muted  mt-4">Aún no tengo sitio web o recién estoy armando mi consulta. Necesito visibilidad y confianza desde el inicio.</p>
+            </div>
+            <div class="mt-3">
+              <a href="{% url 'principiante' %}" class="btn btn-level-1 w-100">Ver soluciones para empezar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4 d-flex">
+        <div class="p-4 shadow rounded bg-white w-100 d-flex flex-column justify-content-between">
+          <div class="h-100 d-flex flex-column justify-content-between">
+            <div>
+              <i class="bi bi-bar-chart-line display-4" style="color:#003366;"></i>
+              <h4 class="fw-bold mt-3" style="color:#003366;"> <strong>Ya comencé, pero me cuesta crecer</strong></h4>
+              <p class="text-muted mt-4">Tengo redes sociales o página básica, pero no estoy atrayendo pacientes como quisiera.</p>
+            </div>
+            <div class="mt-3">
+              <a href="{% url 'intermedio' %}" class="btn btn-level-2 w-100">Ver cómo crecer online</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4 d-flex">
+        <div class="p-4 shadow rounded bg-white w-100 d-flex flex-column justify-content-between">
+          <div class="h-100 d-flex flex-column justify-content-between">
+            <div>
+              <i class="bi bi-gem display-4" style="color:#C0A16B;"></i>
+              <h4 class="fw-bold mt-3" style="color:#003366;"><strong>Estoy consolidado, quiero destacar</strong></h4>
+              <p class="text-muted mt-4 ">Ya tengo pacientes y trayectoria, pero necesito una imagen digital que esté a la altura y que automatice procesos.</p>
+            </div>
+            <div class="mt-3">
+              <a href="{% url 'avanzado' %}" class="btn btn-level-3 w-100">Llevar mi marca al siguiente nivel</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+  

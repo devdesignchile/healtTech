@@ -1,0 +1,152 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>{% block title %}Healt Tech Agency - Soluciones Digitales para Profesionales de la Salud{% endblock %}</title>
+  
+  <meta name="description" content="Agencia especializada en desarrollo web, branding y SEO para médicos y clínicas. Potencia tu consulta con presencia digital profesional." />
+  <meta name="keywords" content="desarrollo web para médicos, branding médico, SEO para clínicas, marketing salud" />
+  <meta name="robots" content="index, follow" />
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Open Graph para Instagram, TikTok y otras plataformas -->
+  <meta property="og:title" content="{% block og_title %}Healt Tech Agency - Soluciones Digitales para Profesionales de la Salud{% endblock %}" />
+  <meta property="og:description" content="Agencia especializada en desarrollo web, branding y SEO para médicos y clínicas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ request.build_absolute_uri }}" />
+  <meta property="og:image" content="{% static 'images/logoHT.jpg' %}" />
+  <meta property="og:site_name" content="Healt Tech Agency" />
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'plugins/aos/aos.css' %}" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  
+  <!-- Google Analytics (opcional) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=TU_ID_ANALYTICS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'TU_ID_ANALYTICS');
+  </script>
+</head>
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+<nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
+  <div class="container">
+	<a class="navbar-brand logo" href="{% url 'index' %}"><img src="{% static 'images/logoHT.jpg' %}" alt="logo"></a>
+    <button class="navbar-toggler bg-light mr-3" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+  <ul class="navbar-nav mx-auto">
+			<li class="nav-item {% if current_page == 'index' %}active{% endif %}" data-aos="fade-down" data-aos-delay="0">
+			  <a class="nav-link" href="{% url 'index' %}">Inicio</a>
+			</li>
+            <li class="nav-item {% if current_page == 'nosotros' %}active{% endif %}" data-aos="fade-down" data-aos-delay="100">
+			  <a class="nav-link" href="{% url 'nosotros' %}">Sobre Nosotros</a>
+			</li>
+            <li class="nav-item dropdown {% if current_page == 'servicios' %}active{% endif %}" data-aos="fade-down" data-aos-delay="200">
+              <a class="nav-link dropdown-toggle" href="{% url 'servicios' %}" id="navbarDropdownServicios" role="button">
+                Servicios
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownServicios">
+                <a class="dropdown-item" href="{% url 'diseño_web' %}">Desarrollo Web</a>
+                <a class="dropdown-item" href="{% url 'seo' %}">Optimización SEO</a>
+                <a class="dropdown-item" href="{% url 'branding' %}">Branding Médico</a>
+              </div>
+            </li>
+			<li class="nav-item {% if current_page == 'planes' %}active{% endif %}" data-aos="fade-down" data-aos-delay="300">
+			  <a class="nav-link" href="{% url 'planes' %}">Planes</a>
+			</li>
+	  </ul>
+    <div>
+    <ul class="navbar-nav mx-auto">
+       <li class="nav-item {% if current_page == 'contacto' %}active{% endif %}" data-aos="fade-down" data-aos-delay="400">
+         <div class="d-lg-block d-flex justify-content-center w-100 mt-3 mt-lg-0">
+         <a target="_blank" href="https://wa.me/56940024998?text=Hola,%20quiero%20potenciar%20mi%20consulta%20médica%20con%20su%20ayuda%20quiero%20agendar%20una%20reunión" class="btn-cta-primary btn-contact-menu" >CONTACTO</a>
+         </div>
+       </li>
+    </ul>
+    </div>
+    </div>
+  </div>
+</nav>
+
+  {% block content %}
+  {% endblock %}    
+
+<footer>
+  <div class="footer-main text-center bg-dark pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <div class="block">
+            <h5 class="text-white mb-3">Síguenos</h5>
+              <ul class="social-icon list-inline">
+                <li class="list-inline-item">
+                   <a href="https://www.facebook.com/themefisher" target="_blank"><i class="bi bi-facebook text-white"></i></a>
+                </li>
+                <li class="list-inline-item">
+                   <a href="https://twitter.com/themefisher" target="_blank"><i class="bi bi-twitter text-white"></i></a>
+                </li>
+                <li class="list-inline-item">
+                   <a href="https://www.instagram.com/themefisher/" target="_blank"><i class="bi bi-instagram text-white"></i></a>
+                </li>
+              </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <div class="block">
+            <h5 class="text-white mb-3">Contacto</h5>
+            <ul class="list-unstyled text-white">
+              <li><a href="mailto:contacto@hta.com" class="text-white">contacto@hta.com</a></li>
+              <li class="text-white"><i class="ti-mobile"></i> Teléfono: +569 4002 4998</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <div class="block">
+            <h5 class="text-white mb-3">Enlaces Rápidos</h5>
+            <ul class="list-unstyled text-white">
+              <li><a href="#inicio" class="text-white">Inicio</a></li>
+              <li><a href="#sobre-nosotros" class="text-white">Sobre Nosotros</a></li>
+              <li><a href="#servicios" class="text-white">Servicios</a></li>
+              <li><a href="#contacto" class="text-white">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="block">
+            <h5 class="text-white mb-3">Acerca de</h5>
+            <p class="text-white">Somos una empresa dedicada a ofrecer soluciones digitales para profesionales de la salud. Desde el diseño web hasta el marketing, brindamos servicios completos para impulsar tu marca.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <div class="scroll-top-to">
+    <i class="ti-angle-up"></i>
+  </div>
+
+  <script src="{% static 'plugins/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script>
+  <script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+  <script src="{% static 'plugins/fancybox/jquery.fancybox.min.js' %}"></script>
+  <script src="{% static 'plugins/syotimer/jquery.syotimer.min.js' %}"></script>
+  <script src="{% static 'plugins/aos/aos.js' %}"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</body>
+</html>
