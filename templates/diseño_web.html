@@ -3,30 +3,38 @@
 {% block content %}
 
 
-  <section class="hero-primary d-flex justify-content-center mb-5 col-12">
-    <div class=" align-center col-10 pt-5">
-          <div class="row justify-content-center align-items-center min-vh-70 text-center text-lg-start">
-            <div class="col-lg-6 py-5 d-none d-lg-block">
-              <img src="{% static 'images/hero-web.png' %}" alt="Imagen médico" class="img-fluid w-75">
-            </div>
-            <div class="col-12 hero-text col-lg-6">
-              <h1 class="fw-bold display-4 mb-4 text-light"><strong>DISEÑO WEB</strong></h1>
-              <p class="text-uppercase text-light mb-5"> <strong>Potencia tu consulta médica con una web profesional, que genere confianza y atraiga clientes</strong></p>
-              <a href="#planes-web" class="btn-cta-primary btn-lg mt-5">Ver Planes</a>
-            </div>
-          </div>
-        </div>
-      </section>
+<section class="hero-primary d-flex justify-content-center mb-5 w-100">
+  <div class="container pt-5">
+    <div class="row justify-content-center align-items-center min-vh-70 text-center text-lg-start">
+      <div class="col-lg-6 py-5 d-none d-lg-block">
+        <img src="{% static 'images/hero-web.png' %}" alt="Imagen médico" class="img-fluid w-100">
+      </div>
+      <div class="col-12 col-lg-6 hero-text px-3 px-lg-0">
+        <h1 class="fw-bold mb-4 text-light">
+          <strong>
+            <span class="d-none d-lg-inline display-4">DESARROLLO WEB MÉDICO</span>
+            <span class="d-inline d-lg-none display-5">DESARROLLO WEB MÉDICO</span>
+          </strong>
+        </h1>
+        <p class="text-uppercase text-light mb-4">
+          <strong>Potencia tu consulta médica con una web profesional, que genere confianza y atraiga clientes</strong>
+        </p>
+        <a href="#planes-web" class="btn-cta-primary btn-lg mt-3">Ver Planes</a>
+      </div>
+    </div>
+  </div>
+</section>
+
       <section class="py-5 " id="por-que-web-medica">
         <div class="container">
           <div class="text-center mb-5">
-            <h2 class="fw-bold color-primary"><strong>¿Por qué necesitas un sitio web profesional?</strong></h2>
+            <h2 class="fw-bold color-primary"><strong>Necesitas una Web profesional</strong></h2>
             <p class=" fs-5">
               En la era digital, tu presencia en línea no es opcional. Es esencial para crecer, generar confianza y estar al alcance de tus pacientes.
             </p>
           </div>
           <div class="row g-4 justify-content-center benefit-card-group">
-            <div class="col-sm-6 col-lg-4 col-xl-2">
+            <div class="col-sm-6 col-lg-4 mb-3 col-xl-2">
               <div class="benefit-card h-100 text-center p-4 shadow-sm rounded-4 bg-white">
                 <div class="icon-circle mb-3">
                   <i class="bi bi-award"></i>
@@ -35,7 +43,7 @@
                 <p>Muestra tu experiencia, certificaciones y artículos profesionales. Posiciónate como un referente en tu especialidad.</p>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-4 col-xl-2">
+            <div class="col-sm-6 col-lg-4 mb-3 col-xl-2">
               <div class="benefit-card h-100 text-center p-4 shadow-sm rounded-4 bg-white">
                 <div class="icon-circle mb-3">
                   <i class="bi bi-calendar-check"></i>
@@ -44,7 +52,7 @@
                 <p>Permite a tus pacientes reservar citas en línea, conocer horarios, coberturas y contactar sin esperas.</p>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-4 col-xl-2">
+            <div class="col-sm-6 col-lg-4 mb-3 col-xl-2">
               <div class="benefit-card h-100 text-center p-4 shadow-sm rounded-4 bg-white">
                 <div class="icon-circle mb-3">
                   <i class="bi bi-emoji-smile"></i>
@@ -53,7 +61,7 @@
                 <p>Humaniza tu práctica, muestra tu lado profesional y cercano. La confianza empieza antes de la cita.</p>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-4 col-xl-2">
+            <div class="col-sm-6 col-lg-4 mb-3 col-xl-2">
               <div class="benefit-card h-100 text-center p-4 shadow-sm rounded-4 bg-white">
                 <div class="icon-circle mb-3">
                   <i class="bi bi-bar-chart-line"></i>
@@ -62,7 +70,7 @@
                 <p>Tu sitio profesional te pone un paso adelante y atrae más pacientes que buscan excelencia.</p>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-4 col-xl-2">
+            <div class="col-sm-6 col-lg-4 mb-3 col-xl-2">
               <div class="benefit-card h-100 text-center p-4 shadow-sm rounded-4 bg-white">
                 <div class="icon-circle mb-3">
                   <i class="bi bi-clock-history fs-2 "></i>
@@ -79,7 +87,7 @@
       <section class="py-5 bg-light">
         <div class="container">
           <div class="text-center mb-5">
-            <h2 class="fw-bold color-primary"><strong>¿Cómo trabajamos contigo?</strong></h2>
+            <h2 class="fw-bold color-primary"><strong>Paso a pasos</strong></h2>
             <p class="lead text-dark">Un proceso simple, pensado para tu éxito digital</p>
           </div>
           <div class="row justify-content-between text-center timeline-process position-relative">
@@ -122,7 +130,7 @@
       <p class="lead text-light">Diseñados para potenciar tu consulta médica según tu etapa profesional</p>
     </div>
     <div class="row g-4 justify-content-center plan-group">
-      <div class="col-md-6 col-lg-3 ">
+      <div class="col-md-6 col-lg-3 mb-3 ">
         <div class="card h-100 text-center shadow-lg border-0">
           <div class="card-body px-4 d-flex flex-column">
             <h5 class="fw-bold color-primary">Landing presencia básica</h5>
@@ -136,12 +144,12 @@
               <li>✔ Hosting, dominio y SSL incluidos por 1 año</li>
             </ul>
             <div class="mt-auto ">
-              <a target="_blank" href="https://wa.me/56940024998?text=Hola%2C%20estoy%20interesado%20en%20el%20plan%20Landing%20presencia%20básica%20de%20desarrollo%20web." class=" btn-plan " target="_blank">Cotizar</a>
+              <a  href="https://wa.me/56931009144?text=Hola%2C%20estoy%20interesado%20en%20el%20plan%20Landing%20presencia%20básica%20de%20desarrollo%20web." class=" btn-plan " target="_blank">Cotizar</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3">
+      <div class="col-md-6 col-lg-3 mb-3">
         <div class="card h-100 text-center shadow-lg border-0">
           <div class="card-body px-4 d-flex flex-column">
             <h5 class="fw-bold color-primary">Presencia online integral</h5>
@@ -155,12 +163,12 @@
               <li>✔ Seguridad HTTPS y backups automáticos</li>
             </ul>
             <div class="mt-auto">
-              <a target="_blank" href="https://wa.me/56940024998?text=Hola%2C%20me%20interesa%20el%20plan%20Presencia%20online%20integral%20para%20mi%20consulta%20médica." class=" btn-plan " target="_blank">Cotizar</a>
+              <a  href="https://wa.me/56931009144?text=Hola%2C%20me%20interesa%20el%20plan%20Presencia%20online%20integral%20para%20mi%20consulta%20médica." class=" btn-plan " target="_blank">Cotizar</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3">
+      <div class="col-md-6 col-lg-3 mb-3">
         <div class="card h-100 text-center shadow-lg  border-0">
           <div class="card-body px-4 d-flex flex-column">
             <h5 class="fw-bold color-primary">Atención y reservas online</h5>
@@ -174,12 +182,12 @@
               <li>✔ Panel de autogestión simple</li>
             </ul>
             <div class="mt-auto">
-              <a target="_blank" href="https://wa.me/56940024998?text=Hola%2C%20quisiera%20cotizar%20el%20plan%20Atención%20y%20reservas%20online%20para%20mi%20consulta." class=" btn-plan " target="_blank">Cotizar</a>
+              <a href="https://wa.me/56931009144?text=Hola%2C%20quisiera%20cotizar%20el%20plan%20Atención%20y%20reservas%20online%20para%20mi%20consulta." class=" btn-plan " target="_blank">Cotizar</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3">
+      <div class="col-md-6 col-lg-3 mb-3">
         <div class="card h-100 text-center shadow-lg border-0">
           <div class="card-body px-4 d-flex flex-column">
             <h5 class="fw-bold color-primary">Portal integral de salud</h5>
@@ -193,7 +201,7 @@
               <li>✔ Soporte técnico + reportes mensuales</li>
             </ul>
             <div class="mt-auto">
-              <a target="_blank" href="https://wa.me/56940024998?text=Hola%2C%20estoy%20interesado%20en%20el%20plan%20Portal%20integral%20de%20salud%20y%20me%20gustaría%20recibir%20más%20información." class=" btn-plan " target="_blank">Cotizar</a>
+              <a  href="https://wa.me/56931009144?text=Hola%2C%20estoy%20interesado%20en%20el%20plan%20Portal%20integral%20de%20salud%20y%20me%20gustaría%20recibir%20más%20información." class=" btn-plan " target="_blank">Cotizar</a>
             </div>
           </div>
         </div>
@@ -208,7 +216,7 @@
       <p class="lead text-light">Evalúa y mejora tu sitio actual con enfoque clínico y técnico</p>
     </div>
     <div class="row g-4 justify-content-center plan-group">
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 mb-3">
         <div class="card h-100 text-center shadow-lg border-0">
           <div class="card-body px-4 d-flex flex-column">
             <h5 class="fw-bold color-primary">Auditoría Básica</h5>
@@ -221,12 +229,12 @@
               <li>✔ Recomendaciones clave de mejora</li>
             </ul>
             <div class="mt-auto">
-              <a target="_blank" href="https://wa.me/56940024998?text=Hola%2C%20estoy%20interesado%20en%20la%20Auditor%C3%ADa%20B%C3%A1sica%20para%20mi%20sitio%20web.%20%C2%BFPodemos%20hablar%20de%20los%20detalles%3F" class="btn-plan">Cotizar</a>
+              <a target="_blank" href="https://wa.me/56931009144?text=Hola%2C%20estoy%20interesado%20en%20la%20Auditor%C3%ADa%20B%C3%A1sica%20para%20mi%20sitio%20web.%20%C2%BFPodemos%20hablar%20de%20los%20detalles%3F" class="btn-plan">Cotizar</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 mb-3">
         <div class="card h-100 text-center shadow-lg border-0">
           <div class="card-body px-4 d-flex flex-column">
             <h5 class="fw-bold color-primary">Auditoría Estándar</h5>
@@ -239,12 +247,12 @@
               <li>✔ Compatibilidad móvil y accesibilidad</li>
             </ul>
             <div class="mt-auto">
-              <a target="_blank" href="https://wa.me/56940024998?text=Hola%2C%20me%20interesa%20la%20Auditor%C3%ADa%20Est%C3%A1ndar%20para%20mi%20web.%20%C2%BEPodemos%20coordinar%20una%20reuni%C3%B3n%3F" class="btn-plan">Cotizar</a>
+              <a target="_blank" href="https://wa.me/56931009144?text=Hola%2C%20me%20interesa%20la%20Auditor%C3%ADa%20Est%C3%A1ndar%20para%20mi%20web.%20%C2%BEPodemos%20coordinar%20una%20reuni%C3%B3n%3F" class="btn-plan">Cotizar</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 mb-3">
         <div class="card h-100 text-center shadow-lg border-0">
           <div class="card-body px-4 d-flex flex-column">
             <h5 class="fw-bold color-primary">Auditoría Premium</h5>
@@ -258,7 +266,7 @@
               <li>✔ Plan de mejoras a 90 días</li>
             </ul>
             <div class="mt-auto">
-              <a target="_blank" href="https://wa.me/56940024998?text=Hola%2C%20quisiera%20cotizar%20la%20Auditor%C3%ADa%20Premium%20para%20mi%20sitio%20web.%20%C2%BEPodemos%20hablar%20al%20respecto%3F" class="btn-plan">Cotizar</a>
+              <a target="_blank" href="https://wa.me/56931009144?text=Hola%2C%20quisiera%20cotizar%20la%20Auditor%C3%ADa%20Premium%20para%20mi%20sitio%20web.%20%C2%BEPodemos%20hablar%20al%20respecto%3F" class="btn-plan">Cotizar</a>
             </div>
           </div>
         </div>
@@ -268,12 +276,12 @@
 </section>
       <section class="d-flex align-items-center bg-light" style="min-height: 50vh;">
         <div class="container text-center">
-          <h2 class="display-5 fw-semibold color-primary mb-3">¿Tu consulta médica aún no tiene una web profesional?</h2>
-          <p class="lead text-dark mb-4">
+          <h2 class="display-5 fw-semibold color-primary mb-3">Quiero una pagina web profesional</h2>
+          <p class="lead text-dark mb-4 d-none d-sm-block">
             Creamos sitios web modernos, funcionales y enfocados en pacientes reales.<br>
             Aumenta tu visibilidad, agenda más consultas y posiciona tu marca en el sector salud.
           </p>
-         <a target="_blank" href="https://wa.me/56940024998?text=Hola,%20quiero%20potenciar%20mi%20consulta%20médica%20con%20su%20ayuda%20quiero%20agendar%20una%20reunión" class="btn btn-cta-alternative btn-lg px-5 py-3 shadow-sm">Agendar reunión</a>
+         <a target="_blank" href="https://wa.me/56931009144?text=Hola,%20quiero%20potenciar%20mi%20consulta%20médica%20con%20su%20ayuda%20quiero%20agendar%20una%20reunión" class="btn btn-cta-alternative btn-lg px-5 py-3 shadow-sm">Agendar reunión</a>
         </div>
       </section>
 {% endblock %}

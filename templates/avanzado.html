@@ -2,27 +2,34 @@
 {% load static %}
 {% block content %}
 
-<section class="hero-primary d-flex justify-content-center mb-5 col-12">
-  <div class=" align-center col-10 pt-5">
-        <div class="row justify-content-center align-items-center min-vh-70 text-center text-lg-start">
-          <div class="col-lg-6 py-5 d-none d-lg-block">
-            <img src="{%  static 'images/diamond.png' %}" alt="Imagen médico" class="img-fluid w-75">
-          </div>
-          <div class="col-12 hero-text col-lg-6">
-            <h1 class="fw-bold display-4 mb-4 text-light"><strong> ¿Quieres consolidarte y automatizar?</strong></h1>
-            <p class="text-uppercase text-light mb-5"> <strong>Llevamos tu presencia médica a un nivel superior con automatización, branding premium y posicionamiento avanzado</strong></p>
-            <a href="#contacto" class="btn-cta-primary btn-lg mt-5">Plan Avanzado</a>
-          </div>
-        </div>
+<section class="hero-primary d-flex justify-content-center w-100">
+  <div class="container pt-5">
+    <div class="row justify-content-center align-items-center min-vh-70 text-center text-lg-start">
+      <div class="col-lg-6 py-5 d-none d-lg-block">
+        <img src="{% static 'images/diamond.png' %}" alt="Imagen médico" class="img-fluid w-100">
       </div>
-    </section>
+      <div class="col-12 col-lg-6 hero-text px-3 px-lg-0">
+        <h1 class="fw-bold mb-4 text-light">
+          <strong>
+            <span class="d-none d-lg-inline display-4">CONSOLIDA TU CENTRO MEDICO</span>
+            <span class="d-inline d-lg-none display-5">CONSOLIDA <br> TU <br> CENTRO MEDICO</span>
+          </strong>
+        </h1>
+        <p class="text-uppercase text-light mb-4 d-sm-block d-none">
+          <strong>Llevamos tu presencia médica a un nivel superior con automatización, branding premium y posicionamiento avanzado</strong>
+        </p>
+        <a href="#plan" class="btn-cta-primary btn-lg mt-3">Plan Intermedio</a>
+      </div>
+    </div>
+  </div>
+</section>
 <div class="container d-flex align-content-center hero-section">
   <div class="row">
     <div class="col-lg-8">
       <section class="py-5 bg-white" id="empezar">
         <div class="container">
-          <div class="row g-5">
-            <div class="col-md-12">
+          <div class="row g-5 justify-mobile">
+            <div class="col-md-12 mb-4">
               <div class="d-flex flex-column flex-md-row align-items-center">
                 <div class="me-md-4 mb-3 mb-md-0">
                   <span class="badge pill-bg-primary fs-5 p-3 rounded-pill">Paso 1</span>
@@ -30,7 +37,7 @@
                 <div class="p-sm-4">
                   <h4 class="fw-semibold">Rebranding Médico Premium</h4>
                   <p class="text-muted mb-2">Rediseñamos tu identidad visual para reflejar tu experiencia y posicionarte como referente en tu área médica.</p>
-                  <ul class="text-muted small">
+                  <ul class="text-muted small list-unstyled">
                     <li>✔ Logotipo y estilo profesional actualizado</li>
                     <li>✔ Paleta de colores, tipografía y elementos visuales refinados</li>
                     <li>✔ Manual de marca avanzado</li>
@@ -38,7 +45,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 mb-4">
               <div class="d-flex flex-column flex-md-row align-items-center">
                 <div class="me-md-4 mb-3 mb-md-0">
                   <span class="badge pill-bg-primary fs-5 p-3 rounded-pill">Paso 2</span>
@@ -46,7 +53,7 @@
                 <div class="p-sm-4">
                   <h4 class="fw-semibold">Automatización de Procesos y Pacientes</h4>
                   <p class="text-muted mb-2">Integramos herramientas para mejorar la gestión de pacientes, reservas y seguimiento.</p>
-                  <ul class="text-muted small">
+                  <ul class="text-muted small list-unstyled">
                     <li>✔ Plataforma de reservas online</li>
                     <li>✔ Recordatorios automáticos por email o WhatsApp</li>
                     <li>✔ Formularios automatizados de contacto y evaluación</li>
@@ -54,7 +61,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 mb-4">
               <div class="d-flex flex-column flex-md-row align-items-center">
                 <div class="me-md-4 mb-3 mb-md-0">
                   <span class="badge pill-bg-primary fs-5 p-3 rounded-pill">Paso 3</span>
@@ -62,7 +69,7 @@
                 <div class="p-sm-4">
                   <h4 class="fw-semibold">SEO Avanzado y Posicionamiento como Referente</h4>
                   <p class="text-muted mb-2">Trabajamos tu posicionamiento con estrategias de contenido y SEO local a medida para tu especialidad.</p>
-                  <ul class="text-muted small">
+                  <ul class="text-muted small list-unstyled">
                     <li>✔ Blog médico optimizado con keywords relevantes</li>
                     <li>✔ Optimización de velocidad, UX y arquitectura web</li>
                     <li>✔ Estrategia SEO para diferenciarte de la competencia</li>
@@ -85,7 +92,7 @@
           </div>
         </div>
       </div>
-      <div class="mb-5 sidebar-transition" style="top: 100px;">
+      <div class="mb-5 sidebar-transition" id="plan" style="top: 100px;">
         <div class="card border-0 rounded-4 p-4 text-white" style="background-color: #1E293B;">
           <div class="card-body text-center">
             <div class="d-flex justify-content-center mb-3">
@@ -102,7 +109,7 @@
               <li class="mb-2 text-white"><i class="bi bi-check-circle-fill me-2"></i><strong> Automatización:</strong> Reservas online, formularios y recordatorios.</li>
               <li class="text-white"><i class="bi bi-check-circle-fill me-2"></i><strong> SEO Avanzado:</strong> Estrategia, contenido y posicionamiento web.</li>
             </ul>
-            <a href="https://wa.me/56940024998?text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20plan%20Despegue%20Profesional.%20%C2%BFPodemos%20hablar?" class="btn btn-cta-secondary rounded-pill px-4 py-2 fw-bold text-teal-700 mt-auto" target="_blank">Cotizar</a>
+            <a href="https://wa.me/56931009144?text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20plan%20Despegue%20Profesional.%20%C2%BFPodemos%20hablar?" class="btn btn-cta-secondary rounded-pill px-4 py-2 fw-bold text-teal-700 mt-auto" target="_blank">Cotizar</a>
           </div>
         </div>
       </div>

@@ -3,31 +3,23 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>{% block title %}Healt Tech Agency - Soluciones Digitales para Profesionales de la Salud{% endblock %}</title>
-  
-  <meta name="description" content="Agencia especializada en desarrollo web, branding y SEO para médicos y clínicas. Potencia tu consulta con presencia digital profesional." />
-  <meta name="keywords" content="desarrollo web para médicos, branding médico, SEO para clínicas, marketing salud" />
+  <title>Agencia de Diseño Web Especializada en Salud | HealTech</title>
+  <meta name="description" content="Impulsa tu clínica médica con diseño web, branding profesional y posicionamiento SEO. Trabajamos con especialistas de salud en todo Chile.">
+   <meta name="keywords" content="desarrollo web para médicos, branding médico, SEO para clínicas, marketing salud" />
   <meta name="robots" content="index, follow" />
-  
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-  <!-- Open Graph para Instagram, TikTok y otras plataformas -->
   <meta property="og:title" content="{% block og_title %}Healt Tech Agency - Soluciones Digitales para Profesionales de la Salud{% endblock %}" />
   <meta property="og:description" content="Agencia especializada en desarrollo web, branding y SEO para médicos y clínicas." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ request.build_absolute_uri }}" />
   <meta property="og:image" content="{% static 'images/logoHT.jpg' %}" />
   <meta property="og:site_name" content="Healt Tech Agency" />
-  
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}" />
   <link rel="stylesheet" href="{% static 'plugins/aos/aos.css' %}" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
   <link href="{% static 'css/style.css' %}" rel="stylesheet" />
-  
-  <!-- Google Analytics (opcional) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=TU_ID_ANALYTICS"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -35,6 +27,34 @@
     gtag('js', new Date());
     gtag('config', 'TU_ID_ANALYTICS');
   </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "HealTech Agency",
+  "alternateName": "HTA"
+  "url": "https://www.healtech.cl",
+  "logo": "https://www.healtech.cl/static/images/logoHT.jpg",
+  "sameAs": [
+    "https://www.instagram.com/healtechagency",
+    "https://www.tiktok.com/@healtechagency"
+  ],
+  "description": "Agencia de diseño web, branding y SEO especializada en salud. Ayudamos a médicos y clínicas a destacar digitalmente.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+56-9-4002-4998",
+    "contactType": "Customer Support",
+    "areaServed": "CL",
+    "availableLanguage": ["es"]
+  },
+  "address": {
+  "@type": "PostalAddress",
+  "addressLocality": "La Serena",
+  "addressRegion": "Coquimbo",
+  "addressCountry": "CL"
+  }
+}
+</script>
 </head>
 
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
@@ -42,9 +62,13 @@
 <nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
   <div class="container">
 	<a class="navbar-brand logo" href="{% url 'index' %}"><img src="{% static 'images/logoHT.jpg' %}" alt="logo"></a>
-    <button class="navbar-toggler bg-light mr-3" type="button" data-toggle="collapse" data-target="#navbarNav"
+    <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span>
+          <span style="display: block; width: 22px; height: 2px; background-color: white; margin: 4px 0;"></span>
+          <span style="display: block; width: 22px; height: 2px; background-color: white; margin: 4px 0;"></span>
+          <span style="display: block; width: 22px; height: 2px; background-color: white; margin: 4px 0;"></span>
+      </span>
     </button>
 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
   <ul class="navbar-nav mx-auto">
@@ -72,7 +96,7 @@
     <ul class="navbar-nav mx-auto">
        <li class="nav-item {% if current_page == 'contacto' %}active{% endif %}" data-aos="fade-down" data-aos-delay="400">
          <div class="d-lg-block d-flex justify-content-center w-100 mt-3 mt-lg-0">
-         <a target="_blank" href="https://wa.me/56940024998?text=Hola,%20quiero%20potenciar%20mi%20consulta%20médica%20con%20su%20ayuda%20quiero%20agendar%20una%20reunión" class="btn-cta-primary btn-contact-menu" >CONTACTO</a>
+         <a target="_blank" href="https://wa.me/56931009144?text=Hola,%20quiero%20potenciar%20mi%20consulta%20médica%20con%20su%20ayuda%20quiero%20agendar%20una%20reunión" class="btn-cta-primary btn-contact-menu" >CONTACTO</a>
          </div>
        </li>
     </ul>

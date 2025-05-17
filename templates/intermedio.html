@@ -2,80 +2,88 @@
 {% load static %}
 {% block content %}
 
-<section class="hero-primary d-flex justify-content-center mb-5 col-12">
-  <div class=" align-center col-10 pt-5">
-        <div class="row justify-content-center align-items-center min-vh-70 text-center text-lg-start">
-          <div class="col-lg-6 py-5 d-none d-lg-block">
-            <img src="{% static 'images/anvanzado.png' %}" alt="Imagen médico" class="img-fluid w-75">
-          </div>
-          <div class="col-12 hero-text col-lg-6">
-            <h1 class="fw-bold display-4 mb-4 text-light"><strong>¿Te cuesta crecer?</strong></h1>
-            <p class="text-uppercase text-light mb-5"> <strong>Impulsa tu visibilidad, posiciona tu marca y comienza a recibir más pacientes con estrategias digitales efectivas</strong></p>
-            <a href="#contacto" class="btn-cta-primary btn-lg mt-5">Plan Intermedio</a>
-          </div>
-        </div>
+<section class="hero-primary d-flex justify-content-center w-100">
+  <div class="container pt-5">
+    <div class="row justify-content-center align-items-center min-vh-70 text-center text-lg-start">
+      <div class="col-lg-6 py-5 d-none d-lg-block">
+        <img src="{% static 'images/anvanzado.png' %}" alt="Imagen médico" class="img-fluid w-100">
       </div>
+      <div class="col-12 col-lg-6 hero-text px-3 px-lg-0">
+        <h1 class="fw-bold mb-4 text-light">
+          <strong>
+            <span class="d-none d-lg-inline display-4">HAZ CRECER TU CENTRO MEDICO</span>
+            <span class="d-inline d-lg-none display-5">HAZ CRECER TU CENTRO MEDICO</span>
+          </strong>
+        </h1>
+        <p class="text-uppercase text-light mb-4 d-sm-block d-none">
+          <strong>Impulsa tu visibilidad, posiciona tu marca y comienza a recibir más pacientes con estrategias digitales efectivas</strong>
+        </p>
+        <a href="#plan" class="btn-cta-primary btn-lg mt-3">Plan Intermedio</a>
+      </div>
+    </div>
+  </div>
 </section>
+<section>
 <div class="container d-flex align-content-center hero-section">
   <div class="row">
     <div class="col-lg-8">
-      <section class="py-5 bg-white" id="empezar">
+      <section class="py-5 bg-white">
         <div class="container">
           <div class="row g-5">
-            <div class="col-md-12">
-                <div class="d-flex flex-column flex-md-row align-items-center">
-                  <div class="me-md-4 mb-3 mb-md-0">
-                    <span class="badge pill-bg-primary fs-5 p-3 rounded-pill">Paso 1</span>
-                  </div>
+            <div class="col-md-12 mb-4">
+              <div class="d-flex flex-column flex-md-row align-items-center justify-mobile">
+                <div class="me-md-4 mb-3 mb-md-0">
+                  <span class="badge pill-bg-primary fs-5 p-3 rounded-pill">Paso 1</span>
+                </div>
                   <div class="p-sm-4">
                     <h4 class="fw-semibold">Auditoría y Rediseño de tu Página Web</h4>
                     <p class="text-muted mb-2">Revisamos tu sitio actual y lo rediseñamos con enfoque en conversión, usabilidad y confianza profesional.</p>
-                    <ul class="text-muted small">
+                    <ul class="text-muted small list-unstyled">
                       <li>✔ Análisis de estructura y contenido actual</li>
                       <li>✔ Propuesta de rediseño clara y funcional</li>
                       <li>✔ Mejora de textos e imagen profesional</li>
                     </ul>
                   </div>
-                </div>
               </div>
-              <div class="col-md-12">
-                <div class="d-flex flex-column flex-md-row align-items-center">
-                  <div class="me-md-4 mb-3 mb-md-0">
-                    <span class="badge pill-bg-primary fs-5 p-3 rounded-pill">Paso 2</span>
-                  </div>
+            </div>
+            <div class="col-md-12 mb-4">
+              <div class="d-flex flex-column flex-md-row align-items-center justify-mobile">
+                <div class="me-md-4 mb-3 mb-md-0">
+                  <span class="badge pill-bg-primary fs-5 p-3 rounded-pill">Paso 2</span>
+                </div>
                   <div class="p-sm-4">
                     <h4 class="fw-semibold">Optimización del Sitio Web</h4>
                     <p class="text-muted mb-2">Mejoramos tu página para que sea más rápida, clara y efectiva en captar pacientes.</p>
-                    <ul class="text-muted small">
+                    <ul class="text-muted small list-unstyled">
                       <li>✔ Diseño responsive y enfocado en experiencia de usuario</li>
                       <li>✔ Textos enfocados en tus servicios</li>
                       <li>✔ Mejora de velocidad y navegación</li>
                     </ul>
                   </div>
-                </div>
               </div>
-      <div class="col-md-12">
-        <div class="d-flex flex-column flex-md-row align-items-center">
-          <div class="me-md-4 mb-3 mb-md-0">
-            <span class="badge pill-bg-primary fs-5 p-3 rounded-pill">Paso 2</span>
-          </div>
-          <div class="p-sm-4">
-            <h4 class="fw-semibold">Posicionamiento en Google (SEO)</h4>
-            <p class="text-muted mb-2">Hacemos que tu página destaque en buscadores cuando las personas buscan tratamientos, especialidades o doctores en tu zona.</p>
-            <ul class="text-muted small">
-              <li>✔ Estrategia SEO local</li>
-              <li>✔ Creación de contenido optimizado</li>
-              <li>✔ Mejora de velocidad y estructura SEO</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+            </div>
+            <div class="col-md-12 mb-4">
+              <div class="d-flex flex-column flex-md-row align-items-center justify-mobile">
+                <div class="me-md-4 mb-3 mb-md-0">
+                  <span class="badge pill-bg-primary fs-5 p-3 rounded-pill">Paso 3</span>
+                </div>
+                  <div class="p-sm-4">
+                    <h4 class="fw-semibold">Posicionamiento en Google (SEO)</h4>
+                    <p class="text-muted mb-2">Hacemos que tu página destaque en buscadores cuando las personas buscan tratamientos, especialidades o doctores en tu zona.</p>
+                    <ul class="text-muted small list-unstyled">
+                      <li>✔ Estrategia SEO local</li>
+                      <li>✔ Creación de contenido optimizado</li>
+                      <li>✔ Mejora de velocidad y estructura SEO</li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </div>
-    <div class="col-lg-4 d-flex align-content-center  d-lg-block">
-      <div class="card shadow-sm d-none d-lg-block mb-3">
+    <div class="col-lg-4 d-flex align-content-center d-lg-block">
+      <div class="card shadow-sm d-none d-lg-block  mb-3">
         <div class="card-body">
           <h5 class="fw-bold mb-3 color-primary">Planes Especiales</h5>
           <div class="d-grid gap-2">
@@ -85,8 +93,7 @@
           </div>
         </div>
       </div>
-      </div>
-      <div class="mb-5 sidebar-transition" style="top: 100px;">
+      <div class="mb-5 sidebar-transition " id="plan" style="top: 100px;">
         <div class="card border-0 rounded-4 p-4 text-white" style="background-color: #1E293B;">
           <div class="card-body text-center">
             <div class="d-flex justify-content-center mb-3">
@@ -104,11 +111,13 @@
               <li class="text-white "><i class="bi bi-check-circle-fill  me-2"></i><strong> Optimización Técnica:</strong> Velocidad, textos y UX.</li>
               <li class="text-white "><i class="bi bi-check-circle-fill  me-2"></i><strong> SEO Local:</strong> Contenido y estrategia para Google</li>
             </ul>
-            <a href="https://wa.me/56940024998?text=Hola,%20estoy%20interesado%20en%20el%20Plan%20Intermedio.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20detalles?" class="btn btn-cta-secondary rounded-pill px-4 py-2 fw-bold text-teal-700 mt-auto" target="_blank">Cotizar</a>
+            <a href="https://wa.me/56931009144?text=Hola,%20estoy%20interesado%20en%20el%20Plan%20Intermedio.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20detalles?" class="btn btn-cta-secondary rounded-pill px-4 py-2 fw-bold text-teal-700 mt-auto" target="_blank">Cotizar</a>
           </div>
         </div>
       </div>
     </div>
+  </div>
 </div>
+</section>
 
 {% endblock %}
