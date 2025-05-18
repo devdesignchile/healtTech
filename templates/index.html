@@ -5,6 +5,9 @@
 <section class="section gradient-banner mb-5 pt-0">
   <div class="container hero-index">
     <div class="row align-items-center">
+    <div class="col-12 d-block d-md-none text-center mb-4 order-1">
+      <img class="img-fluid pl-5 d-block" src="{% static 'images/hero_img-removebg.png' %}" alt="screenshot">
+    </div>
       <div class="col-12 col-md-6 order-2 order-md-1 text-center text-md-left"
            data-aos="fade-right"
            data-aos-delay="300"
@@ -12,15 +15,15 @@
         <h1 class="text-white fw-bold mb-4">
             Diseño Web, SEO y Branding para Profesionales de la Salud
         </h1>
-        <h4 class="text-white mb-5">
-          <strong>  ¿Eres un profesional de la salud? Impulsa tu consulta con presencia digital profesional</strong>
+        <h4 class="text-white mb-5 d-none d-md-block">
+          <strong>¿Eres un profesional de la salud? Impulsa tu consulta con presencia digital profesional</strong>
         </h4>
         <a href="{% url 'planes' %}"
-           class="btn-cta-primary px-4 py-3 px-sm-5 py-sm-4 fs-5 fs-sm-4 fw-bold  shadow-lg  d-inline-block">
+           class="btn-cta-primary px-4 py-3 px-sm-5 py-sm-4 fs-5 fs-sm-4 fw-bold shadow-lg d-inline-block">
            VER PLANES
         </a>
       </div>
-      <div class="col-md-6 text-center order-1 order-md-2 d-none d-md-block"
+      <div class="col-md-6 text-center d-none d-md-block order-1 order-md-2"
            data-aos="fade-left"
            data-aos-delay="600"
            data-aos-duration="1000">
@@ -29,6 +32,7 @@
     </div>
   </div>
 </section>
+
 <section class="feature section mt-5 pt-0">
 	<div class="container mb-5">
 		<div class="row ">
