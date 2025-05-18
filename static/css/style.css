@@ -74,12 +74,19 @@ p, li, blockquote, label {
   font-size: 90%;
   font-weight: 500;
   }
-  .btn-cta-primary:hover{
+.btn-cta-primary:hover{
     background-color: #1e293b;
     color: white;
     transition: .3s;
     text-decoration: none;
     }
+
+@media (max-width: 991.98px) {
+  .btn-cta-primary {
+    padding:3px 25px ;
+  }
+}
+
 .btn-cta-alternative{
   background-color: #1e293b;
   color: white;
@@ -190,7 +197,7 @@ p, li, blockquote, label {
   }
 .main-nav {
   z-index: 1;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   top: 0;
   left: 0;
   width: 100%;
