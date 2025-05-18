@@ -779,7 +779,10 @@ ul.list-unstyled li {
 }
 @media (max-width: 576px) {
   .justify-mobile {
-    text-align: center;
+    text-align: center!important;
   }
 }
 
+.pene{
+  background-color: #121416;
+}
