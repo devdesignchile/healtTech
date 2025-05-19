@@ -23,11 +23,12 @@ def intermedio(request):
 
 def avanzado(request):
     return render(request, 'avanzado.html', {'current_page': 'avanzado'})
-def contacto(request):
-    return render(request, 'contact.html', {'current_page': 'contacto'})
 
 def planes(request):
     return render(request, 'planes.html', {'current_page': 'planes'})
 
 def nosotros(request):
     return render(request, 'nosotros.html', {'current_page': 'nosotros'})
+
+def egresados(request):
+    return render(request, 'plan_egresados.html', {'current_page': 'egresados'})

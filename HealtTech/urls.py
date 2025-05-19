@@ -20,7 +20,10 @@ from django.contrib import sitemaps
 from django.contrib.sitemaps.views import sitemap
 from django.urls import path
 from app.sitemaps import StaticViewSitemap
+from django.http import HttpResponse
 
+def health(request):
+    return HttpResponse("OK")
 
 sitemaps_dict = {
     'static': StaticViewSitemap,
@@ -30,4 +33,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('app.urls')),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps_dict}, name='sitemap'),
+    path("health", health),
 ]
