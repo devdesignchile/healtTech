@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=%e8!@e=yv45t#ens3_18nxs^-xfhjo()c4fz!8art7#m!(v@q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']    #['82.25.64.197']
+ALLOWED_HOSTS = ['82.25.64.197']
 
 RENDER_EXTERNAl_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 
