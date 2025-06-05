@@ -16,11 +16,10 @@ class StaticViewSitemap(Sitemap):
             'principiante',
             'intermedio',
             'avanzado',
-            'contacto',
             'planes',
             'nosotros',
+            'egresados',
         ]
 
     def location(self, item):
         return reverse(item)
-
