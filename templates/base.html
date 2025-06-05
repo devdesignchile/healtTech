@@ -4,6 +4,17 @@
 <head>
   <meta charset="UTF-8" />
   <title>Agencia de Diseño Web Especializada en Salud | HealTech</title>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J9FBN4HZJC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-J9FBN4HZJC');
+  </script>
+
   <meta name="google-site-verification" content="I-Tysf6s5vGi3jfkPocAIVClXcE1AOv_aKGGdv4YVWM" />
   <meta name="description" content="Impulsa tu clínica médica con diseño web, branding profesional y posicionamiento SEO. Trabajamos con especialistas de salud en todo Chile.">
   <meta name="keywords" content="desarrollo web para médicos, branding médico, SEO para clínicas, marketing salud" />
@@ -17,47 +28,45 @@
   <meta property="og:url" content="{{ request.build_absolute_uri }}" />
   <meta property="og:image" content="{% static 'images/logoHT.jpg' %}" />
   <meta property="og:site_name" content="Healt Tech Agency" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}" />
   <link rel="stylesheet" href="{% static 'plugins/aos/aos.min.css' %}" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="{% static 'css/style.min.css' %}?v=1.3">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=TU_ID_ANALYTICS"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'TU_ID_ANALYTICS');
-  </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "HealTech Agency",
-  "alternateName": "HTA",
-  "url": "https://www.healtech.cl",
-  "logo": "https://www.healtech.cl/static/images/logoHT.jpg",
-  "sameAs": [
-    "https://www.instagram.com/healtechagency",
-    "https://www.tiktok.com/@healtechagency"
-  ],
-  "description": "Agencia de diseño web, branding y SEO especializada en salud. Ayudamos a médicos y clínicas a destacar digitalmente.",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+56-9-4002-4998",
-    "contactType": "Customer Support",
-    "areaServed": "CL",
-    "availableLanguage": ["es"]
-  },
-  "address": {
-  "@type": "PostalAddress",
-  "addressLocality": "La Serena",
-  "addressRegion": "Coquimbo",
-  "addressCountry": "CL"
+
+  <!-- Datos estructurados -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "HealTech Agency",
+    "alternateName": "HTA",
+    "url": "https://www.healtech.cl",
+    "logo": "https://www.healtech.cl/static/images/logoHT.jpg",
+    "sameAs": [
+      "https://www.instagram.com/healtechagency",
+      "https://www.tiktok.com/@healtechagency"
+    ],
+    "description": "Agencia de diseño web, branding y SEO especializada en salud. Ayudamos a médicos y clínicas a destacar digitalmente.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+56-9-4002-4998",
+      "contactType": "Customer Support",
+      "areaServed": "CL",
+      "availableLanguage": ["es"]
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "La Serena",
+      "addressRegion": "Coquimbo",
+      "addressCountry": "CL"
+    }
   }
-}
-</script>
+  </script>
 </head>
+
 
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
 
