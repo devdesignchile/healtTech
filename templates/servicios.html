@@ -1,10 +1,10 @@
  {% extends 'base.html' %}
 {% load static %}
-{% block title %}Servicios web para Profesionales de la Salud | HealTech Agency{% endblock %}
-{% block meta_description %}Descubre nuestros servicios especializados en diseño web, branding y SEO para médicos y clínicas. Impulsa tu presencia online con soluciones digitales adaptadas al sector salud.{% endblock %}
+{% block title %}Servicios web| HealTech{% endblock %}
+{% block meta_description %}Servicios especializados en diseño web, branding y SEO para médicos y clínicas. Impulsa tu presencia online con soluciones digitales adaptadas al sector salud.{% endblock %}
 {% block meta_keywords %}servicios digitales salud, diseño web para médicos, branding médico, SEO para clínicas, marketing digital salud{% endblock %}
 {% block og_title %}Servicios Especializados para profesionales y Clínicas | HealTech Agency{% endblock %}
-{% block og_description %}Ofrecemos soluciones digitales integrales para profesionales de la salud: diseño web, branding y posicionamiento SEO. Mejora tu visibilidad y atrae más pacientes.
+{% block og_description %}Ofrecemos soluciones digitales para profesionales de la salud: diseño web, branding y posicionamiento SEO. Mejora tu visibilidad y atrae más pacientes
 {% endblock %}
 {% block content %}
 <section class="hero-secondary d-flex justify-content-center mb-5 col-12">
@@ -147,56 +147,6 @@
     </div>
   </div>
 </section>
-  <section class="container recomedaciones mb-5 pb-5">
-    <div class="text-center mb-5">
-      <h2 class="fw-bold mb-5 ">¿No sabes que es lo que necesitas?</h2>
-     <p class="text-center lead text-muted mb-5">Selecciona la opción que más se asemeje a tu situación y descubre cómo podemos ayudarte</p>
-    </div>
-    <div class="row text-center">
-      <div class="col-lg-4 mb-4 d-flex">
-        <div class="p-4 shadow rounded bg-white w-100 d-flex flex-column justify-content-between">
-          <div class="h-100 d-flex flex-column justify-content-between">
-            <div>
-              <i class="bi bi-award display-4" style="color:#2E8B57;"></i>
-              <h4 class="fw-bold mt-3" style="color:#003366;"> <strong>Estoy comenzando, quiero hacerlo bien</strong></h4>
-              <p class="text-muted  mt-4">Aún no tengo sitio web o recién estoy armando mi consulta. Necesito visibilidad y confianza desde el inicio.</p>
-            </div>
-            <div class="mt-3">
-              <a aria-label="quiero montar mi clinica" href="{% url 'principiante' %}" class="btn btn-level-1 w-100">Ver soluciones para empezar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4 d-flex">
-        <div class="p-4 shadow rounded bg-white w-100 d-flex flex-column justify-content-between">
-          <div class="h-100 d-flex flex-column justify-content-between">
-            <div>
-              <i class="bi bi-bar-chart-line display-4" style="color:#003366;"></i>
-              <h4 class="fw-bold mt-3" style="color:#003366;"> <strong>Ya comencé, pero me cuesta crecer</strong></h4>
-              <p class="text-muted mt-4">Tengo redes sociales o página básica, pero no estoy atrayendo pacientes como quisiera.</p>
-            </div>
-            <div class="mt-3">
-              <a aria-label="ya tengo mi clinica" href="{% url 'intermedio' %}" class="btn btn-level-2 w-100">Ver cómo crecer online</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4 d-flex">
-        <div class="p-4 shadow rounded bg-white w-100 d-flex flex-column justify-content-between">
-          <div class="h-100 d-flex flex-column justify-content-between">
-            <div>
-              <i class="bi bi-gem display-4" style="color:#C0A16B;"></i>
-              <h4 class="fw-bold mt-3" style="color:#003366;"><strong>Estoy consolidado, quiero destacar</strong></h4>
-              <p class="text-muted mt-4 ">Ya tengo pacientes y trayectoria, pero necesito una imagen digital que esté a la altura y que automatice procesos.</p>
-            </div>
-            <div class="mt-3">
-              <a aria-label="quiero consolidar mi clinica" href="{% url 'avanzado' %}" class="btn btn-level-3 w-100">Llevar mi marca al siguiente nivel</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 {% endblock %}
 
   
